@@ -444,10 +444,6 @@ export async function initCounting(client) {
     await saveCounting();
 
     if (!syncMode) {
-      const userData = (await getEcoData(msg.author.id)) || {};
-      userData.balance = (userData.balance || 0) + 1;
-      await logTransaction(msg.author.id, 1, "plus", "Counting");
-      await setEcoData(msg.author.id, userData);
       await msg.react("✅").catch(() => {});
     }
   };
