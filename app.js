@@ -1,4 +1,4 @@
-import {Client,ModalBuilder,REST,Routes,SlashCommandBuilder,GatewayIntentBits,Partials,ChannelType,PermissionFlagsBits,EmbedBuilder,AuditLogEvent,MessageFlags,MessageType,PermissionsBitField} from "discord.js";
+import {Client,ModalBuilder,REST,Routes,SlashCommandBuilder,Events,GatewayIntentBits,Partials,ChannelType,PermissionFlagsBits,EmbedBuilder,AuditLogEvent,MessageFlags,MessageType,PermissionsBitField} from "discord.js";
 import "dotenv/config";
 import fs from 'fs/promises';
 import path from 'path';
