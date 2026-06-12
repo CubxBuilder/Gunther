@@ -1,4 +1,4 @@
-import {SlashCommandBuilder, REST, AuditLogEvent, Client} from "discord.js";
+import {Client,ModalBuilder,REST,Routes,SlashCommandBuilder,GatewayIntentBits,Partials,ChannelType,PermissionFlagsBits,EmbedBuilder,AuditLogEvent,MessageFlags,MessageType,PermissionsBitField} from "discord.js";
 import "dotenv/config";
 const client = new Client({
   intents: [
