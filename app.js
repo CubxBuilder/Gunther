@@ -434,7 +434,7 @@ export async function initCounting(client) {
     countingData.lastUserId = msg.author.id;
     countingData.lastCountingTime = msg.createdTimestamp;
 
-    const excludedUsers = ["1151971830983311441", "1274320881585356892"];
+    const excludedUsers = [];
     if (!excludedUsers.includes(msg.author.id)) {
       countingData.scoreboard[msg.author.id] ??= 0;
       countingData.scoreboard[msg.author.id]++;
