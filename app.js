@@ -41,7 +41,7 @@ export function initAuditLogs(client) {
         iconURL: user?.displayAvatarURL() || client.user.displayAvatarURL(),
       })
       .setDescription(`**Event:** \`${title}\`\n${text}`)
-      .setFooter({ text: "Kekse Clan Security | Master Log" })
+      .setFooter({ text: "Nerds Security | Master Log" })
       .setTimestamp();
     if (thumb) embed.setThumbnail(thumb);
     await chan.send({ embeds: [embed] }).catch(() => {});
@@ -309,7 +309,7 @@ export async function initCounting(client) {
         iconURL: user.displayAvatarURL({ size: 512 }),
       })
       .setDescription(`**Aktion:** \`${action}\`\n${details}`)
-      .setFooter({ text: "Kekse Clan | Counting System" })
+      .setFooter({ text: "Nerds | Counting System" })
       .setTimestamp();
 
     await logChannel.send({ embeds: [logEmbed] }).catch(() => {});
@@ -350,7 +350,7 @@ export async function initCounting(client) {
             "Keine Daten",
         )
         .setColor("#ffffff")
-        .setFooter({ text: "Kekse Clan" });
+        .setFooter({ text: "Nerds" });
 
       await msg.reply({ embeds: [embed] });
       return;
