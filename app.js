@@ -524,4 +524,4 @@ client.setMaxListeners(50);
 client.on("error", console.error);
 client.on("warn", console.warn);
 client.login(process.env.BOT_TOKEN);
-console.log(`Bot was logged in as ${client.user.tag}`)
+console.log(`Bot was logged in`)
